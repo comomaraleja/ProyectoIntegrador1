@@ -1,0 +1,44 @@
+.row{
+    padding: 30px;
+    --bs-gutter-x: 0rem;
+    
+}
+
+div{
+    background-color: rgb(18, 45, 52);
+    text-align: center;
+    
+}
+
+#acerca{
+ text-align: justify;
+}
+
+#nombre{
+    font-weight: bold;
+    font-size: 2em ;
+    margin-top: 25%;
+}
+
+
+#fotoperfil{
+    
+    border-radius: 50%;
+    
+  
+   }
+
+   @media(min-widht:550px){
+       #fotodeperfil{
+           width: 15%;
+       }}   
+    
+
+h1,h2,p{
+    color: #ffffff;
+}  
+
+h1{
+    margin-top: 25%;
+}
+    
