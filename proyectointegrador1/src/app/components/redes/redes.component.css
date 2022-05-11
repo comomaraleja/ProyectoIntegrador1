@@ -1,4 +1,29 @@
 img{
     
-    width: 40px;
-margin-right: 10px;}
+    width: 38px;
+margin-right: 5px;
+margin-left: 5px;
+margin-top: 5px;
+
+
+}
+
+div{
+    background-color: aliceblue;
+
+    box-shadow:
+    0 0 5px rgba(0,178,255,1),
+    0 0 10px rgba(0,178,255,1),
+    0 0 20px rgba(0,178,255,1),
+    0 0 40px rgba(38,104,127,1),
+    0 0 30px rgba(38,104,127,1),
+    0 0 20px rgba(38,104,127,1),
+    0 0 20px rgba(38,104,127,1),
+    0 0 50px rgba(38,104,127,1),
+    0 0 50px rgba(38,104,127,1);
+
+    height: 50px;
+    
+    
+     
+}

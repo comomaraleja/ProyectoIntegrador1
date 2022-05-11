@@ -1,33 +1,48 @@
 
 img{
-    width: 100%;
-    border-radius: 10%;
+    margin-top: 2%;
+    width: 97%;
+    
+   
+    box-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 30px rgba(38,104,127,1),
+		0 0 20px rgba(38,104,127,1),
+		0 0 20px rgba(38,104,127,1),
+		0 0 50px rgba(38,104,127,1),
+		0 0 50px rgb(232, 64, 247);
     
     
 }
 
 
 .contenedor{
-    margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+    margin-top:0%;
     position: relative;
     display: inline-block;
     text-align: center;
-    background-color: rgb(18, 45, 52);
+    background-color: black;
     
 
 }
 
 .css-typing{
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 10%;
     text-align: justify;
+    
     
     
     color: aliceblue;
     font-size: 5em;
     font-family:sans-serif;
-    color: #ffffff;
+    color: #d5f4ef;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -37,13 +52,25 @@ img{
     border-right: 0.15em solid #18bdec;
     animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
     ;
+    
+    text-shadow: 
+		0 0 10px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 10px rgba(38,104,127,1),
+		0 0 10px rgba(38,104,127,1),
+		0 0 10px rgba(38,104,127,1),
+		0 0 30px rgb(151, 71, 249),
+		0 0 10px rgba(38,104,127,1),
+		0 0 30px rgb(254, 30, 254);
+    
   }
   @keyframes typing {
     from {
       width: 0;
     }
     to {
-      width: 100%;
+      width: 81%;
     }
   }
   @keyframes blink {

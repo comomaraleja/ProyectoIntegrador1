@@ -1,0 +1,29 @@
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    Word-wrap: break-Word;
+    
+}
+
+div{
+    background-color:black;
+    
+}
+
+li,p{
+    color:#ffffffff;
+    text-align: right;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+   color: #3fb3e6;
+   text-align: right;
+}
+ h2{
+     color:#3eab91;
+ }

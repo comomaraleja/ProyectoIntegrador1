@@ -1,0 +1,31 @@
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    Word-wrap: break-Word;
+    
+}
+
+div{
+    background-color:rgb(18, 45, 52);
+    
+}
+
+li,p{
+    color:#ffffffff;
+    text-align: left;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+   color: #01b3ff;
+   
+}
+
+h2{
+    color:#3eab91
+}
+

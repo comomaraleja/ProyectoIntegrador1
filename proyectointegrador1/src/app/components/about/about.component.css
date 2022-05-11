@@ -1,12 +1,13 @@
 .row{
-    padding: 30px;
+    padding: 2%;
     --bs-gutter-x: 0rem;
     
 }
 
 div{
-    background-color: rgb(18, 45, 52);
-    text-align: center;
+    background-color: black;
+    text-align: left;
+    
     
 }
 
@@ -16,29 +17,61 @@ div{
 
 #nombre{
     font-weight: bold;
-    font-size: 2em ;
-    margin-top: 25%;
+    font-size: 31px ;
+    margin-top: 20%;
+    color:#01b3ff;
+    text-align: center;
 }
 
+#fotobox{
+   
+    padding: 5%;
+}
 
 #fotoperfil{
-    
+   
+    width: 100%;
     border-radius: 50%;
+    margin-top: 3%;
+   
     
+        box-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 30px rgba(38,104,127,1),
+		0 0 20px rgba(38,104,127,1),
+		0 0 20px rgba(38,104,127,1),
+		0 0 50px rgba(38,104,127,1),
+		0 0 50px rgba(38,104,127,1);
   
    }
 
-   @media(min-widht:550px){
-       #fotodeperfil{
-           width: 15%;
+   @media(min-widht:350px){
+       #fotoperfil{
+           width: 20%;
+           
+           
        }}   
-    
 
-h1,h2,p{
+     
+
+h2,p,li{
     color: #ffffff;
 }  
+    
+
+    
+#twobox,#thirdbox{
+    padding: 5px;
+   
+}
+
 
 h1{
-    margin-top: 25%;
+    margin-top: 20%;
+   color: #01b3ff;
+   text-align: center;
+   
 }
-    
