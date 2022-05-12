@@ -42,14 +42,13 @@ img{
     color: aliceblue;
     font-size: 5em;
     font-family:sans-serif;
-    color: #d5f4ef;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
     font-size: 4vw;
     margin: 0 auto;
     font-family:'Courier New', Courier, monospace;
-    border-right: 0.15em solid #18bdec;
+    border-right: 0.15em solid aliceblue;
     animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
     ;
     
