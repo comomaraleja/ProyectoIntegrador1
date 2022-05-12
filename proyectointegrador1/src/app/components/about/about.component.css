@@ -9,18 +9,30 @@ div{
     text-align: left;
     
     
+    
 }
 
 #acerca{
- text-align: justify;
+ text-align: right;
 }
 
 #nombre{
     font-weight: bold;
-    font-size: 31px ;
-    margin-top: 20%;
+    font-size: 33px ;
+    margin-top: 10%;
     color:#01b3ff;
-    text-align: center;
+    text-align: left;
+
+    text-shadow:
+   0 0 5px rgb(10, 11, 11),
+   0 0 5px rgba(0,178,255,1),
+   0 0 5px rgb(2, 7, 8),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 30px rgb(255, 57, 242);
 }
 
 #fotobox{
@@ -69,9 +81,19 @@ h2,p,li{
 }
 
 
-h1{
-    margin-top: 20%;
+h2{
+    margin-top: 45%;
    color: #01b3ff;
-   text-align: center;
+   text-align: right;
    
+   text-shadow:
+   0 0 5px rgb(10, 11, 11),
+   0 0 5px rgba(0,178,255,1),
+   0 0 5px rgb(2, 7, 8),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 30px rgb(255, 57, 242);
 }

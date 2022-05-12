@@ -23,6 +23,16 @@ li{
 h1{
    color: #3fb3e6;
    text-align: right;
+   text-shadow:
+   0 0 5px rgb(10, 11, 11),
+   0 0 5px rgba(0,178,255,1),
+   0 0 5px rgb(2, 7, 8),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 30px rgb(255, 57, 242);
 }
  h2{
      color:#3eab91;
