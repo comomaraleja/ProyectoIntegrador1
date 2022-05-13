@@ -1,0 +1,97 @@
+.row{
+    padding:20px;
+    text-align: left;
+    
+   
+    
+}
+
+.container{
+    
+    overflow: hidden; 
+    background-color: black;
+   margin-top: 50px;
+    box-shadow:
+    0 0 5px rgba(0,178,255,1),
+    0 0 10px rgba(0,178,255,1),
+    0 0 20px rgba(0,178,255,1),
+    0 0 20px rgba(38,104,127,1),
+    0 0 30px rgb(246, 74, 255),
+    0 0 20px rgba(38,104,127,1),
+    0 0 20px rgba(38,104,127,1),
+    0 0 20px rgb(223, 82, 255),
+    0 0 20px rgb(232, 64, 247);
+
+
+    
+}
+
+.texto{
+    float: left;
+}
+.imagen{
+    float: left;
+}
+img {
+    block-size: 150px;
+    
+   
+
+}
+
+.imagen{
+    
+    text-align: center;
+    
+    
+}
+
+#proyecto2{
+    margin-top: 2%;
+}
+div{
+    background-color: black;
+    text-align: left;
+    padding: 3%;
+    
+    
+    
+    
+   
+
+}
+h1{
+    text-align: center;
+    margin-top: 3%;
+}
+h1,h2{
+    
+    
+    text-shadow:
+   0 0 5px rgb(10, 11, 11),
+   0 0 5px rgba(0,178,255,1),
+   0 0 5px rgb(2, 7, 8),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 30px rgb(255, 57, 242);
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 30px;
+}
+h1{
+    color: aliceblue;
+}
+h2{
+    text-align: center;
+    color:#3eab91
+}
+h3{
+   margin-top: 30px;
+    color:#3eab91
+}

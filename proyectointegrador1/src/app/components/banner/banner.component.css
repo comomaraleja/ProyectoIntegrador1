@@ -1,7 +1,8 @@
 
 img{
     margin-top: 2%;
-    width: 97%;
+    width: 100%;
+    
     
    
     box-shadow:
@@ -22,25 +23,23 @@ img{
 .contenedor{
   margin-right: auto;
   margin-left: auto;
-    margin-top:0%;
+   
     position: relative;
-    display: inline-block;
+    display: flex;
     text-align: center;
-    background-color: black;
+    flex-direction: column;
     
-
 }
 
 .css-typing{
     position: absolute;
     top: 15%;
-    left: 10%;
-    text-align: justify;
+    left: 8%;
+    text-align: center;
     
     
     
     color: aliceblue;
-    font-size: 5em;
     font-family:sans-serif;
     width: 0;
     overflow: hidden;
@@ -48,8 +47,8 @@ img{
     font-size: 4vw;
     margin: 0 auto;
     font-family:'Courier New', Courier, monospace;
-    border-right: 0.15em solid aliceblue;
-    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+    border-right: 0.05em solid aliceblue;
+    animation: typing 4s steps(40) 1s 1 normal both, blink 1s steps(1) infinite;
     ;
     
     text-shadow: 
@@ -78,3 +77,8 @@ img{
     }
   }
    
+  @media(max-width:575px){
+    .contenedor{
+      margin-top: 20%;
+    }
+  }

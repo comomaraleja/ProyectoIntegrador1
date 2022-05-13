@@ -1,6 +1,8 @@
 div {
     background-color:black; /*rgb(59, 114, 142);*/
     padding: 2.5%; 
+    display: flex;
+    flex-direction: column;
     
       
 }
