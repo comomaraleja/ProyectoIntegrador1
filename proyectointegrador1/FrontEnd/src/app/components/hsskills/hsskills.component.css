@@ -1,16 +1,20 @@
 
 .row{
-    
-    padding: 1%;
+    background-color: rgb(18, 45, 52);   
     line-height:0;
-   
+    text-align: center;
+    
     
    
 }
 
 div{
-    background-color: rgb(18, 45, 52);
-   
+    
+    
+    padding: 40px;
+    align-items: center;   
+    display:flex;
+  
     
 }
 
@@ -31,4 +35,6 @@ h1{
    0 0 30px rgb(255, 57, 242);
    
 }
+
+
 

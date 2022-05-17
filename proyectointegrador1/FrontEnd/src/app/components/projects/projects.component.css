@@ -21,7 +21,8 @@
     0 0 20px rgba(38,104,127,1),
     0 0 20px rgb(223, 82, 255),
     0 0 20px rgb(232, 64, 247);
-
+    border-radius: 5%;
+    
 
     
 }
@@ -33,7 +34,7 @@
     float: left;
 }
 img {
-    block-size: 150px;
+    block-size: 140px;
     
    
 
@@ -46,8 +47,9 @@ img {
     
 }
 
-#proyecto2{
+.proyecto2{
     margin-top: 2%;
+    
 }
 div{
     background-color: black;
@@ -94,4 +96,8 @@ h2{
 h3{
    margin-top: 30px;
     color:#3eab91
+}
+
+#proyecto_1{
+    size: 90%;
 }

@@ -10,6 +10,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
+import { HttpClientModule} from '@angular/common/http';
 
 //Circle progress//
 
@@ -39,6 +40,9 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+
+    //especificacion de modulo httpClient//
+    HttpClientModule,
     //import circle progress//
     NgCircleProgressModule.forRoot({})
 

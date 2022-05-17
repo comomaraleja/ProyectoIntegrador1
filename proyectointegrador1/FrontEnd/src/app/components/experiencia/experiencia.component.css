@@ -1,12 +1,14 @@
 .row {
     
-    padding: 5%;
+    background-color:rgb(18, 45, 52);
     Word-wrap: break-Word;
     
 }
 
 div{
-    background-color:rgb(18, 45, 52);
+   padding: 40px;
+    
+    
     
 }
 
@@ -35,6 +37,7 @@ h1{
 }
 
 h2{
+    
     color:#3eab91
 }
 
