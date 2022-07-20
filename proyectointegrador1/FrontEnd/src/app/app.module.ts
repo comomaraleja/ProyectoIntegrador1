@@ -21,6 +21,9 @@ import { HsskillsComponent } from './components/hsskills/hsskills.component';
 
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -35,13 +38,16 @@ import { FooterComponent } from './components/footer/footer.component';
     HsskillsComponent,
     
     ProjectsComponent,
-         FooterComponent
+         FooterComponent,
+         HomeComponent,
+         LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
 
     //especificacion de modulo httpClient//
+    
     HttpClientModule,
     //import circle progress//
     NgCircleProgressModule.forRoot({})
