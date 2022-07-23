@@ -18,11 +18,11 @@ public class UsuarioService {
         return iusuarioRepository.findByNombreUsuario(nombreUsuario);
     }
     
-    public boolean existByNombreUsuario(String nombreUsuario){
+    public boolean existsByNombreUsuario(String nombreUsuario){
         return iusuarioRepository.existsByNombreUsuario(nombreUsuario);
     }
     
-    public boolean existByEmail (String email){
+    public boolean existsByEmail (String email){
         return iusuarioRepository.existsByEmail(email); 
     }
     

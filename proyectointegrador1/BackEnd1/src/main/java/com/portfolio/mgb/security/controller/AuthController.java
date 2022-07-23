@@ -50,10 +50,10 @@ public class AuthController {
         if (bindingResult.hasErrors())
             return new ResponseEntity(new Mensaje("Campos contienen errores o el correo electrónico es inválido"), HttpStatus.BAD_REQUEST);
         
-        if (usuarioService.existByNombreUsuario(nuevoUsuario.getNombreUsuario()))
+        if (usuarioService.existsByNombreUsuario(nuevoUsuario.getNombreUsuario()))
             return new ResponseEntity(new Mensaje("El nombre de usuario ya se encuentra en uso"), HttpStatus.BAD_REQUEST);
         
-        if (usuarioService.existByEmail(nuevoUsuario.getEmail()))
+        if (usuarioService.existsByEmail(nuevoUsuario.getEmail()))
             return new ResponseEntity(new Mensaje ("Este email ya se encuentra en uso"), HttpStatus.BAD_REQUEST);
         
         Usuario usuario = new Usuario(nuevoUsuario.getNombre(), nuevoUsuario.getNombreUsuario(), 
