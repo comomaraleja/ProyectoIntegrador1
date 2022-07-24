@@ -61,14 +61,16 @@ public class PersonaController {
         return persona;
                                 
     }
-}
     
-    /* NO RECUERDO POR QUÉ PUSE LAS SIGUIENTES LÍNEAS (REVISAR)
-        
     @GetMapping("personas/traer/perfil")
     public Persona findPersona(){
     return ipersonaService.findPersona((long) 1);
-    }*/
+    }
+}
+    
+    
+        
+    
     
 
 

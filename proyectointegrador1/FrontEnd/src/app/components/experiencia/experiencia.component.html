@@ -1,26 +1,28 @@
 <div class="row">
     <h1>&nbsp;&nbsp;&nbsp;Experiencia laboral</h1>
+<!-----------------boton para cargar experiencia laboral-->
+    <div class="col-lg-2">
+        <button type="button"></button>
+    </div>
+
     <div class="col-lg-11">
-        <ul>
-            <li> 
-                <h2>Monitoría Académica en cátedra <i>Introducción a la Filosofía</i></h2>
-            <h3>Universidad de Caldas (Manizales, Colombia) </h3> 
-            <h4>(2011-2014)</h4> 
-            </li>
-            <li> 
-                <h2>Corrección literaria y asesoría para la elaboración de textos académicos. </h2>
-            <h3>Independiente (Colombia/Argentina) </h3> 
-            <h4>(2013-)</h4> 
-            </li>
-            <li> 
-                <h2>Maquetación, Diseño y Encuadernación en <i>Nativa Encuadernaciones</i>
-            </h2>
-            <h3>Independiente
-        (Córdoba Capital, Argentina) </h3> 
-            <h4>(2017-)</h4> 
-            </li>
-           
-        </ul>
+        <!---------------- creamos una tabla con bootstrap----------------------------------->
+       <table class="table">
+            <tbody>
+                <!---------- filas y columnas-------------------------------->
+
+                <!--como vamos a recorrer un array, tenemos que usar un for-->
+                <tr *ngFor="let Experiencia of experiencia">
+                    <td><h2>{{Experiencia.nombreExp}}</h2></td><br>
+                    <td><h3>{{Experiencia.descripcionExp}}</h3></td>
+                    <td><h4>EDITAR EXPERIENCIA</h4></td>
+                    <td><h4>BORRAR EXPERIENCIA</h4></td>
+                </tr>
+
+            </tbody>
+
+
+       </table>
     </div>
     <div class="col-lg-1"></div>
 </div>
