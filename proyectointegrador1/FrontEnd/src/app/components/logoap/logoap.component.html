@@ -10,11 +10,13 @@
             <a href="https://twitter.com/Nada81295784"><img src="../../../assets/twitter logo.png" id="logo3"></a>
             <a href="https://www.facebook.com/nadanadanada22/"><img src="../../../assets/facebook logo.png" id="logo4"></a>
         
-            <button type="button" class="btn btn-outline-light" (click)="login()"><h4>Log in</h4></button>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged"><h4>Ingresar</h4></button> 
+            <!-- !isLogged quiere decir, que si no estamos loggeados, nos podemos loggear-->
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged"><h4>Cerrar sesión</h4></button>
         
        
         </div>
 
        
     </div>
-</div>
+</div> 
