@@ -20,7 +20,7 @@ export class NewExperienciaComponent implements OnInit {
   }
 
   onCreate(): void {
-    const expe= new Experiencia (this.nombreExp, this.descripcionExp);
+    const expe = new Experiencia(this.nombreExp, this.descripcionExp);
     this.sExperiencia.save(expe).subscribe(
       data=>{
         alert("Experiencia Añadida");

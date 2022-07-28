@@ -14,33 +14,33 @@ import com.portfolio.mgb.repository.RExperiencia;
 public class SExperiencia { 
     
     @Autowired
-    RExperiencia iExperienciaRepository;
+    RExperiencia rExperiencia;
     
     public List<Experiencia> list(){
-        return iExperienciaRepository.findAll();
+        return rExperiencia.findAll();
     
     }
     public Optional<Experiencia> getOne(int id) {
-        return iExperienciaRepository.findById(id);
+        return rExperiencia.findById(id);
     }
     
     public Optional<Experiencia> getByNombreExp(String nombreExp){
-        return iExperienciaRepository.findByNombreExp(nombreExp);
+        return rExperiencia.findByNombreExp(nombreExp);
     }
     
-    public void save (Experiencia expLab){
-        iExperienciaRepository.save(expLab);
+    public void save (Experiencia expe){
+        rExperiencia.save(expe);
     }
     
     public void delete (int id){
-        iExperienciaRepository.deleteById(id);
+        rExperiencia.deleteById(id);
     }
     
     public boolean existsById(int id){
-        return iExperienciaRepository.existsById(id);
+        return rExperiencia.existsById(id);
     }
     
     public boolean existsByNombreExp(String nombreExp){
-        return iExperienciaRepository.existsByNombreExp(nombreExp); 
+        return rExperiencia.existsByNombreExp(nombreExp); 
     }
 }

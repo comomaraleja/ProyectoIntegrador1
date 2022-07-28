@@ -12,20 +12,22 @@ import { AboutComponent } from './components/about/about.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HttpClientModule} from '@angular/common/http';
-
-//Circle progress//
-
-import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HsskillsComponent } from './components/hsskills/hsskills.component';
-
-
-
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+
+//Circle progress//
+
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HsskillsComponent } from './components/hsskills/hsskills.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+
+
+
+
 
 
 
@@ -45,15 +47,16 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
          FooterComponent,
          HomeComponent,
          LoginComponent,
-         NewExperienciaComponent
+         NewExperienciaComponent,
+         EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-
-    //especificacion de modulo httpClient//
     
+
+    //especificacion de modulo httpClient//    
     HttpClientModule,
     //import circle progress//
     NgCircleProgressModule.forRoot({})
