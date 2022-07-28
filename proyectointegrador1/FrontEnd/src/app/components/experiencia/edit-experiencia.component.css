@@ -1,0 +1,73 @@
+.container{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/18/22/58/stars-1837306_960_720.jpg");
+   
+    
+    
+
+}
+
+.row {
+    
+    background-color:rgb(18, 45, 52);
+    Word-wrap: break-Word;
+    
+    
+}
+
+div{
+   padding: 40px;
+   
+
+ 
+
+   
+    
+    
+    
+}
+
+table,p{
+    color:#ffffffff;
+    text-align: left;
+}
+
+li{
+    list-style: none;
+}
+
+h4{
+   color:aliceblue;
+   text-shadow:
+   0 0 5px rgb(10, 11, 11),
+   0 0 5px rgba(0,178,255,1),
+   0 0 5px rgb(2, 7, 8),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 5px rgba(38,104,127,1),
+   0 0 30px rgb(255, 57, 242);
+   
+}
+
+
+
+button{
+
+    margin-left: 40px;
+
+    color:aliceblue;
+    text-shadow:
+    0 0 5px rgb(10, 11, 11),
+    0 0 5px rgba(0,178,255,1),
+    0 0 5px rgb(2, 7, 8),
+    0 0 5px rgba(38,104,127,1),
+    0 0 5px rgba(38,104,127,1),
+    0 0 5px rgba(38,104,127,1),
+    0 0 5px rgba(38,104,127,1),
+    0 0 5px rgba(38,104,127,1),
+    0 0 30px rgb(255, 57, 242);
+
+
+}
+

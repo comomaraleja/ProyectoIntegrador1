@@ -12,6 +12,10 @@ div{
     
 }
 
+#Titulo{
+    display:flex;
+}
+
 table,p{
     color:#ffffffff;
     text-align: left;
@@ -23,6 +27,9 @@ li{
 
 h1{
    color:aliceblue;
+   margin-top: 10px;
+  
+   
    text-shadow:
    0 0 5px rgb(10, 11, 11),
    0 0 5px rgba(0,178,255,1),
@@ -43,7 +50,9 @@ h2{
 
 button{
 
-    margin-left: 10px;
+   
+
+    margin-left: 40px;
 
     color:aliceblue;
     text-shadow:
