@@ -1,34 +1,34 @@
 
 package com.portfolio.mgb.service;
 
-import com.portfolio.mgb.entity.ExperienciaLaboral;
-import com.portfolio.mgb.repository.iExperienciaRepository;
+import com.portfolio.mgb.entity.Experiencia;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.portfolio.mgb.repository.RExperiencia;
 
 @Service
 @Transactional//con esto mantiene la persistencia entre el back y la base de datos 
-public class ImpExperienciaService { 
+public class SExperiencia { 
     
     @Autowired
-    iExperienciaRepository iExperienciaRepository;
+    RExperiencia iExperienciaRepository;
     
-    public List<ExperienciaLaboral> list(){
+    public List<Experiencia> list(){
         return iExperienciaRepository.findAll();
     
     }
-    public Optional<ExperienciaLaboral> getOne(int id) {
+    public Optional<Experiencia> getOne(int id) {
         return iExperienciaRepository.findById(id);
     }
     
-    public Optional<ExperienciaLaboral> getByNombreExp(String nombreExp){
+    public Optional<Experiencia> getByNombreExp(String nombreExp){
         return iExperienciaRepository.findByNombreExp(nombreExp);
     }
     
-    public void save (ExperienciaLaboral expLab){
+    public void save (Experiencia expLab){
         iExperienciaRepository.save(expLab);
     }
     

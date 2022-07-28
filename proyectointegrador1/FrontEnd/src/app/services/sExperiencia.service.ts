@@ -1,4 +1,4 @@
-import { Experiencia } from './../model/experiencia';
+import { Experiencia } from '../model/experiencia';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ExperienciaService {
-  expURL = 'http:localhost:8080/explab';
+export class SExperienciaService {
+  expURL = 'http:localhost:8080/explab/';
 
   constructor(private HttpClient: HttpClient) { }
 
@@ -22,7 +22,7 @@ export class ExperienciaService {
   }
 
   public save(experiencia: Experiencia): Observable<any>{
-    return this.HttpClient.post<any>(this.expURL+`create`, experiencia);
+    return this.HttpClient.post<any>(this.expURL+'create', experiencia);
   
   }
 

@@ -2,7 +2,14 @@
     <h1>&nbsp;&nbsp;&nbsp;Experiencia laboral</h1>
 <!-----------------boton para cargar experiencia laboral-->
     <div class="col-lg-2">
-        <button type="button"></button>
+
+        <!--boton que nos redirige a nueva Experiencia-->
+        <!--El botón se tiene que mostrar sólo si estoy loggeado(condicion con *)-->
+        <button type="button" class="btn btn-outline-light" routerLink="/nuevaexp" *ngIf="isLogged"> 
+            Nueva experiencia 
+        </button>
+
+
     </div>
 
     <div class="col-lg-11">
@@ -12,7 +19,7 @@
                 <!---------- filas y columnas-------------------------------->
 
                 <!--como vamos a recorrer un array, tenemos que usar un for-->
-                <tr *ngFor="let Experiencia of experiencia">
+                <tr *ngFor="let Experiencia of expe">
                     <td><h2>{{Experiencia.nombreExp}}</h2></td><br>
                     <td><h3>{{Experiencia.descripcionExp}}</h3></td>
                     <td><h4>EDITAR EXPERIENCIA</h4></td>
@@ -26,3 +33,4 @@
     </div>
     <div class="col-lg-1"></div>
 </div>
+ 

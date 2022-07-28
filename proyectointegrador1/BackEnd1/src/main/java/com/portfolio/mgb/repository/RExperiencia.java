@@ -1,13 +1,13 @@
 
 package com.portfolio.mgb.repository;
 
-import com.portfolio.mgb.entity.ExperienciaLaboral;
+import com.portfolio.mgb.entity.Experiencia;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository 
-public interface iExperienciaRepository extends JpaRepository<ExperienciaLaboral, Integer> {
-    public Optional<ExperienciaLaboral> findByNombreExp(String nombreExp);
+public interface RExperiencia extends JpaRepository<Experiencia, Integer> {
+    public Optional<Experiencia> findByNombreExp(String nombreExp);
     public boolean existsByNombreExp(String nombreExp);
 }

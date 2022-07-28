@@ -1,13 +1,13 @@
 
 package com.portfolio.mgb.controller;
 
-import antlr.StringUtils;
-import com.portfolio.mgb.Service.ImpPersonaService;
+
 import com.portfolio.mgb.dto.DtoExperiencia;
-import com.portfolio.mgb.entity.ExperienciaLaboral;
+import com.portfolio.mgb.entity.Experiencia;
 import com.portfolio.mgb.security.controller.Mensaje;
-import com.portfolio.mgb.service.ImpExperienciaService;
+import com.portfolio.mgb.service.SExperiencia;
 import java.util.List;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,20 +22,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/explab")
+@RequestMapping("explab")
 @CrossOrigin(origins = "http://localhost:4200")
 public class ExpController {
     @Autowired
-    ImpExperienciaService impExperienciaService;
+    SExperiencia impExperienciaService;
     
     @GetMapping("/lista")
-    public ResponseEntity<List<ExperienciaLaboral>> list(){
-        List<ExperienciaLaboral> list=impExperienciaService.list();
+    public ResponseEntity<List<Experiencia>> list(){
+        List<Experiencia> list=impExperienciaService.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
-    
-    
+        
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!impExperienciaService.existsById(id)) {
@@ -53,7 +52,7 @@ public class ExpController {
         if(impExperienciaService.existsByNombreExp(dtoexp.getNombreExp()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
         
-        ExperienciaLaboral experiencia = new ExperienciaLaboral(dtoexp.getNombreExp(), dtoexp.getDescripcionExp());
+        Experiencia experiencia = new Experiencia(dtoexp.getNombreExp(), dtoexp.getDescripcionExp());
         impExperienciaService.save(experiencia);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -75,7 +74,7 @@ public class ExpController {
         if(StringUtils.isBlank(dtoexp.getNombreExp()))
             return new ResponseEntity(new Mensaje("Nombre de experiencia es obligatorio"), HttpStatus.BAD_REQUEST);
         
-        ExperienciaLaboral experiencia = impExperienciaService.getOne(id).get();
+        Experiencia experiencia = impExperienciaService.getOne(id).get();
         experiencia.setNombreExp(dtoexp.getNombreExp());
         experiencia.setDescripcionExp((dtoexp.getDescripcionExp()));
         
