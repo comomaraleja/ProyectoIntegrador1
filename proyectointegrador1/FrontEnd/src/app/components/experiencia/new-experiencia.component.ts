@@ -1,4 +1,5 @@
-import { SExperienciaService } from './../../services/sExperiencia.service';
+import { ExperienciaService } from 'src/app/services/experiencia.service';
+
 import { Experiencia } from './../../model/experiencia';
 import { Router } from '@angular/router';
 
@@ -13,7 +14,7 @@ export class NewExperienciaComponent implements OnInit {
   nombreExp: string = '';
   descripcionExp: string = '';
 
-  constructor(private sExperiencia: SExperienciaService, private router: Router) { }//acá en el constructor traemos el service
+  constructor(private sExperiencia: ExperienciaService, private router: Router) { }//acá en el constructor traemos el service
   //traemos tambien el router porque cuando usemos el botón nos tiene que redirigir a ese componente
 
   ngOnInit(): void {

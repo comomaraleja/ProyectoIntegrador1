@@ -6,9 +6,16 @@
 }
 
 div{
-   padding: 40px;
+    padding: 40px;
+    text-align: right;
     
     
+}
+
+td{
+
+margin-left: 40px;
+
     
 }
 

@@ -1,26 +1,29 @@
+.container{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/18/22/58/stars-1837306_960_720.jpg");
+   
+    
+    
+
+}
+
 .row {
     
-    
+    background-color:rgb(18, 45, 52);
     Word-wrap: break-Word;
     
-}
-
-div{ color: black;
-    padding: 40px;
-    text-align: right;
-    
     
 }
 
-td{
+div{
+   padding: 40px;
+   
 
-margin-left: 40px;
+ 
 
+   
     
-}
-
-#Titulo{
-    display:flex;
+    
+    
 }
 
 table,p{
@@ -32,11 +35,8 @@ li{
     list-style: none;
 }
 
-h1{
+h4{
    color:aliceblue;
-   margin-top: 10px;
-  
-   
    text-shadow:
    0 0 5px rgb(10, 11, 11),
    0 0 5px rgba(0,178,255,1),
@@ -50,14 +50,9 @@ h1{
    
 }
 
-h2{
-    
-    color:#3eab91
-}
+
 
 button{
-
-   
 
     margin-left: 40px;
 

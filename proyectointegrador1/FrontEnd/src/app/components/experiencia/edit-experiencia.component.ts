@@ -1,4 +1,5 @@
-import { SExperienciaService } from './../../services/sExperiencia.service';
+import { ExperienciaService } from 'src/app/services/experiencia.service';
+
 import { Experiencia } from './../../model/experiencia';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -11,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class EditExperienciaComponent implements OnInit {
  expLab: Experiencia = null;
  
-  constructor(private sExperienciaService: SExperienciaService, private activatedRouter: ActivatedRoute,  private router: Router){ }
+  constructor(private sExperienciaService: ExperienciaService, private activatedRouter: ActivatedRoute,  private router: Router){ }
 
   ngOnInit(): void {
     //captura el id de la expereinecia que queremos modificar

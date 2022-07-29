@@ -1,31 +1,53 @@
 <div class="row">
-    <h1>Educación</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul>
-            <li> 
-                <h2>Licenciada en Filosofía y Letras</h2>
-            <h3>Universidad de Caldas (Manizales, Colombia) </h3> 
-            <h4>2011-2014 (Culminada)</h4> 
-            </li>
-            <li> 
-                <h2>Licenciatura en Letras Modernas</h2>
-                <h3>Universidad Nacional de Córdoba</h3> 
-            <h4>(2016-En curso)</h4> 
-            </li>            
-            <li> 
-                <h2>Tecnicatura en Corrección Literaria</h2>
-            <h3>Universidad Nacional de Córdoba </h3> 
-            <h4>(2017-En curso)</h4> 
-            </li>           
-            <li> 
-                <h2>Desarrollo web <i>full-stack Jr.</i></h2>           
-            <h3>Argentina Programa</h3> 
-            <h4>(2021-En curso)</h4> 
-            </li>
+   
+    <!-----------------boton para cargar experiencia laboral-->
+        <div class="col-lg-12" id="Titulo" >
            
-        </ul>
-    </div>
+            <h1>&nbsp;&nbsp;&nbsp; Educación</h1>
     
-</div>
+            <!--boton que nos redirige a nueva Educacion-->
+            <!--El botón se tiene que mostrar sólo si estoy loggeado(condicion con *)-->
+            <button type="button" class="btn btn-outline-light" routerLink="/nuevaedu" *ngIf="isLogged">
+                <i class="bi bi-file-earmark-text"></i> 
+                <h6>NUEVA EDUCACIÓN</h6>
+                
+            </button>
+            
+    
+    
+        </div>
+    
+        <div class="col-lg-12">
+            <!---------------- creamos una tabla con bootstrap----------------------------------->
+           <table class="table">
+                <tbody>
+                    <!---------- filas y columnas-------------------------------->
+    
+                    <!--como vamos a recorrer un array, tenemos que usar un for-->
+                    <tr *ngFor="let Educacion of educacion">
+                        <td><h2>{{Educacion.nombreE}}</h2></td><br>
+                        <td><h3>{{Educacion.descripcionE}}</h3></td>
+    
+                        <td *ngIf="isLogged"> 
+                            <button type="button" class="btn btn-outline-light" routerLink="/editedu/{{Educacion.id}}"> 
+                            <i class="bi bi-pencil-square"></i><h6>EDITAR EDUCACIÓN</h6>
+                        </button>
+                        </td>
+    
+                        <td *ngIf="isLogged"> 
+                            <button type="button" id= "borrar" class="btn btn-outline-danger" (click)="delete(Educacion.id)"> 
+                                <i class="bi bi-trash3"></i><h6>BORRAR EDUCACIÓN</h6>
+                        </button>
+                        </td>
+                        
+                    </tr>
+    
+                </tbody>
+    
+    
+           </table>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+     
 

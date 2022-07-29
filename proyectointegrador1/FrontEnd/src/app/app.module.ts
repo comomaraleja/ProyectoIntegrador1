@@ -24,6 +24,8 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HsskillsComponent } from './components/hsskills/hsskills.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 
 
 
@@ -48,7 +50,9 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
          HomeComponent,
          LoginComponent,
          NewExperienciaComponent,
-         EditExperienciaComponent
+         EditExperienciaComponent,
+         NewEducacionComponent,
+         EditEducacionComponent
   ],
   imports: [
     BrowserModule,

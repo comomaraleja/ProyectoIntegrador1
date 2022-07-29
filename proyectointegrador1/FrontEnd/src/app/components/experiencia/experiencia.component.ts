@@ -1,5 +1,5 @@
 import { Experiencia } from './../../model/experiencia';
-import { SExperienciaService } from './../../services/sExperiencia.service';
+import { ExperienciaService } from '../../services/experiencia.service';
 import { TokenService } from './../../services/token.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienciaComponent implements OnInit {
   expe: Experiencia[]=[];
 
-  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { } //acá empezamos a valodar: si estás loggeado, se pueden hacer determinadas cosas, si no se está loggeado no. 
+  constructor(private sExperiencia: ExperienciaService, private tokenService: TokenService) { } //acá empezamos a valodar: si estás loggeado, se pueden hacer determinadas cosas, si no se está loggeado no. 
 
   isLogged = false;
 
