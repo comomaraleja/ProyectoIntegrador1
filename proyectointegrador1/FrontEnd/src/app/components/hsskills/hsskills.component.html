@@ -1,8 +1,21 @@
 <div class="row">
-    <h1>Hard & soft skills</h1> 
-    <div class="col-sm-3 col-md-3 col-lg-3">
+   <!----------------boton para cargar experiencia laboral-->
+    <div class="col-lg-12" id="Titulo">
+        <h1> HARD AND SOFT SKILLS</h1>
+
+        <!--boton que nos redirige a nueva Experiencia-->
+        <!--El botón se tiene que mostrar sólo si estoy loggeado(condicion con *)-->
+        <button type="button" class="btn btn-outline-light" routerLink="/nuevoskill" *ngIf="isLogged">
+            <i class="bi bi-file-earmark-text"></i> 
+            <h6>AGREGAR SKILL</h6> 
+        </button> 
+
+    <div class="col-sm-12 col-md-12 col-lg-12">
+
+        <span *ngFor="let Skill of ski">
+       <!--
         <circle-progress
-        [percent]="85"
+        [percent]="80"
         [radius]="100"
         [outerStrokeWidth]="15"
         [innerStrokeWidth]="8"
@@ -12,7 +25,7 @@
         [animationDuration]="700"
         [titleColor]="'#ffffff'"
         [titleFontSize]="'1.5em'"
-        [subtitle]= "'HTML'"
+        [subtitle]= "'html'"
         [subtitleColor]="'#5cffd6'"
         [subtitleFontSize]="'2em'"
         [unitsColor]="'#ffffff'"
@@ -21,6 +34,42 @@
         
                 
         ></circle-progress>
+        </span>-->
+       
+      <div id="cuerpo">
+        <div >
+            <h2>{{Skill.nameSkill}}</h2>
+            <div class="progress blue">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value"> {{Skill.percentSkill}}% </div>
+                
+            </div>
+
+           
+
+            <button type="button" class="btn btn-outline-light" routerLink="/editskill/{{Skill.id}}" *ngIf="isLogged"> 
+                <i class="bi bi-pencil-square"></i><h6>EDITAR SKILL</h6>
+                </button>>
+                      
+                <button type="button" id= "borrar" class="btn btn-outline-danger" (click)="delete(Skill.id)" *ngIf="isLogged"> 
+                <i class="bi bi-trash3"></i><h6>BORRAR SKILL</h6></button> 
+        
+        </div>
+      </div>
+       
+        </span>
+    
+    </div>
+        
+        
+</div>
+
+        <!--
     </div>
     <div class="col-sm-3 col-md-3 col-lg-3">
         <circle-progress
@@ -181,3 +230,4 @@
    
 
 
+-->

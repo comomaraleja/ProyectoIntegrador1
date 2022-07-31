@@ -1,12 +1,35 @@
 <div class="row">
-    <h1>Proyectos</h1>
-    <div class=" col-sm-12 col-md-5 col-lg-5 container" id="proyecto_1">
-        <div class="col-sm-12 col-md-12 col-lg-12 texto">
-            <h2>Nombre-del-proyecto-1</h2>
-            <p>TextoTextoTextoTextoTextoTexto
-                TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto</p>
+    <div class="col-lg-12" id="Titulo">
+        <h1>PROYECTOS</h1>
 
-        </div>
+        <!--boton que nos redirige a nueva Experiencia-->
+        <!--El botón se tiene que mostrar sólo si estoy loggeado(condicion con *)-->
+        <button type="button" class="btn btn-outline-light" routerLink="/nuevoproy" *ngIf="isLogged">
+            <i class="bi bi-file-earmark-text"></i> 
+            <h6>AÑADIR PROYECTO</h6>
+        </button>
+    </div>
+
+    <div class=" col-sm-12 col-md-8 col-lg-8 container">
+        <span *ngFor="let Proyectos of proy">
+            <h2>{{Proyectos.nombrePro}}</h2>
+            <h5>{{Proyectos.descripcionPro}}</h5><br>
+            <img src="{{Proyectos.imgPro}}"> <br><br><br>
+
+            <button type="button" class="btn btn-outline-light" routerLink="/editproy/{{Proyectos.id}}" *ngIf="isLogged"> 
+            <i class="bi bi-pencil-square"></i><h6>EDITAR PROYECTO</h6>
+            </button>>
+
+            
+
+            <button type="button" id= "borrar" class="btn btn-outline-danger" (click)="delete(Proyectos.id)" *ngIf="isLogged"> 
+            <i class="bi bi-trash3"></i><h6>BORRAR PROYECTO</h6></button> 
+            
+            <br><br><br><br> <!--espacio para el siguiente proyecto-->
+        </span>
+    </div>
+
+       <!-- </div>
         <div class="col-sm-12 col-md-12 col lg-12 imagen">
             <h3><i>Header</i> y <i>banner</i></h3>
             <img Class="proyecto2"src="../../../assets/proyecto1.PNG">
@@ -20,17 +43,12 @@
             <h2>Nombre-del-proyecto-2</h2>
             <p>TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto TextoTextoTextoTextoTextoTexto</p>
 
-        </div>
-        <div class="col-sm-12 col-md-12 col lg-12 imagen"  >
-            <h3><i>Header</i> y <i>banner</i></h3>
-            <img src="../../../assets/proyecto1.PNG">
-            <h3>Sección "Acerca de mi"</h3>
-            <img id= "proyecto2"src="../../../assets/proyecto2.PNG">
+       
 
-        </div>
+        </div>-->
 
         
-    </div>
+    
 
     
 

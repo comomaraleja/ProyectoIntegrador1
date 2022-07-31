@@ -34,7 +34,7 @@
     float: left;
 }
 img {
-    block-size: 140px;
+    block-size: 500px;
     
    
 
@@ -53,18 +53,17 @@ img {
 }
 div{
     background-color: black;
-    text-align: left;
+    text-align: center;
     padding: 3%;
-    
-    
-    
-    
-   
+
 
 }
+
+
 h1{
-    text-align: center;
+   
     margin-top: 3%;
+    padding:3%
 }
 h1,h2{
     
@@ -81,7 +80,7 @@ h1,h2{
    0 0 30px rgb(255, 57, 242);
 }
 
-p{
+h5{
     color: aliceblue;
     text-align: center;
     margin-top: 30px;
@@ -100,4 +99,17 @@ h3{
 
 #proyecto_1{
     size: 90%;
+}
+
+button{
+
+    text-shadow:  0 0 5px rgb(10, 11, 11),
+    0 0 5px rgba(0,178,255,1),
+    0 0 5px rgb(2, 7, 8),
+    0 0 5px rgba(38,104,127,1),
+    0 0 5px rgba(38,104,127,1),
+    0 0 5px rgba(38,104,127,1),
+    0 0 5px rgba(38,104,127,1),
+    0 0 5px rgba(38,104,127,1),
+    0 0 30px rgb(255, 57, 242);;
 }

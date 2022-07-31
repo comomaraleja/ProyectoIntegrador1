@@ -26,6 +26,11 @@ import { HsskillsComponent } from './components/hsskills/hsskills.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { NewProyectoComponent } from './components/projects/new-proyecto.component';
+import { EditProyectoComponent } from './components/projects/edit-proyecto.component';
+import { NuevoSkillComponent } from './components/hsskills/nuevo-skill.component';
+import { EditSkillComponent } from './components/hsskills/edit-skill.component';
+
 
 
 
@@ -55,6 +60,11 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
          EditExperienciaComponent,
          NewEducacionComponent,
          EditEducacionComponent,
+         NewProyectoComponent,
+         EditProyectoComponent,
+         NuevoSkillComponent,
+         EditSkillComponent,
+         
        
 
   ],
